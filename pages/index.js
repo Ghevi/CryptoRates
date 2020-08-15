@@ -15,7 +15,7 @@ const Index = (props) => (
 );
 
 Index.getInitialProps = async function () {
-  const result = await fetch(
+  const result = await Fetch(
     'https://api.coindesk.com/v1/bpi/currentprice.json'
   );
   const data = await result.json();

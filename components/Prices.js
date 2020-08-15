@@ -5,7 +5,7 @@ class Prices extends React.Component {
 
   render() {
     let list = '';
-    const currency = this.state.currency;
+    const {currency} = this.state;
 
     list = (
       <li className="list-group-item">
